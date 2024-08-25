@@ -2,14 +2,31 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        SecurityUtils.check("megabit65_" , "630845la_" ,  "630845la_" );
     }
 }
+  /* или так...
+
+   try {
+     SecurityUtils.check("cnduwl12" ,"12345" ,"1234");
+    } catch (WrongPasswordException e ) {
+     System.err.println( "Error!" +e.getMassage());
+     } catch (WrongLoginException e){
+        throw new RuntimeException(e);
+       }  finally {
+       System.out.println("Cпать!")
+        }}
+
+        try {
+        int a = 5/0;
+        } catch (ArithmeticException e ) {
+        } System.out.println("it's ok")
+        }
+
+        Throwable  ловит любую ошибку (+JVM)(error -наследник траблов)
+        while (true){
+        try{
+        }catch (Throwable e) {
+        }
+        */
